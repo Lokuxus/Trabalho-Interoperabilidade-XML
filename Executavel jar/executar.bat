@@ -1,0 +1,1 @@
+java --add-modules=java.xml.bind,java.activation -jar Trabalho_de_Interoperabilidade-0.0.1.jar
