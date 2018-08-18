@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Curso nome="Ciência da Computação">
+    <Semestre nome="Semestre 1">
+        <disciplinas nome="Calculo 1" codigo="4654">
+            <creditos>4</creditos>
+            <descricao>Disciplia contendo conteudo de função e derivadas</descricao>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <sala>Sala 109</sala>
+        </disciplinas>
+        <name>Semestre 1</name>
+    </Semestre>
+    <Semestre nome="Semestre 2">
+        <disciplinas nome="Calculo 2" codigo="4655">
+            <creditos>4</creditos>
+            <descricao>Disciplia contendo conteudo de integrais, derivada dupla e integral dupla</descricao>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <sala>Sala 109</sala>
+        </disciplinas>
+        <name>Semestre 2</name>
+    </Semestre>
+</Curso>

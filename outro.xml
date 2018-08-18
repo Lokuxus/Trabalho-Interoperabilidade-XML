@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Curso nome="Ciência da Computação">
+    <Semestre>
+        <disciplinas nome="Calculo 23">
+            <creditos>4</creditos>
+            <descricao>Disciplia contendo conteudo de função e derivadas</descricao>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <sala>Sala 109</sala>
+        </disciplinas>
+    </Semestre>
+    <Semestre>
+        <disciplinas nome="Calculo 2">
+            <creditos>4</creditos>
+            <descricao>Disciplia contendo conteudo de integrais, derivada dupla e integral dupla</descricao>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <sala>Sala 109</sala>
+        </disciplinas>
+    </Semestre>
+</Curso>
