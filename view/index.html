@@ -9,41 +9,37 @@
             <link rel="stylesheet" href="application/css/style.css">
       </head>
       <body>
-        <h2 class="main-title">Ciência da Computação</h2>
+      
         <div class="main-app" ng-controller="XmlController as viewModel">
-                <table class="table table-striped table-bordered">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
+            <h2 class="main-title">{{viewModel.curso.nome}}</h2>
+                
+            <table class="table table-bordered" ng-repeat="tabela in viewModel.curso.semestres">
+                <thead>
+                  <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Descrição da Matéria</th>
+                    <th scope="col">Professor(a)</th>
+                    <th scope="col">Sala</th>
+                    <th scope="col">Quantidade de Créditos</th>
+                    <th scope="col">Periodo</th>
+                  </tr>
+                  
+                </thead>
+                <tbody>
+                  <tr ng-repeat="linha in tabela.disciplinas">
+                      <th>{{linha.codigo}}</th> 
+                      <th>{{linha.nome}}</th> 
+                      <th>{{linha.descricao}}</th> 
+                      <th>{{linha.professor.nome}}</th> 
+                      <th>{{linha.sala}}</th> 
+                      <th>{{linha.creditos}}</th> 
+                      <th>{{tabela.nome}}</th> 
+                  </tr>
+                </tbody>
+              </table>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-        <script src="vendors/bootstrap/js/bootstrap.js"></script>
         <script src="application/js/controller.js"></script>
       </body>
     </html>
