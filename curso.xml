@@ -8,6 +8,7 @@
                 <nome>Célia</nome>
                 <titulo>MSc</titulo>
             </professor>
+            <ementa>Alguma coisa só para aparecer</ementa>
             <sala>Sala 109</sala>
         </disciplinas>
         <name>Semestre 1</name>
@@ -20,6 +21,7 @@
                 <nome>Célia</nome>
                 <titulo>MSc</titulo>
             </professor>
+            <ementa>Alguma coisa só para aparecer</ementa>
             <requisitos>4654</requisitos>
             <sala>Sala 109</sala>
         </disciplinas>

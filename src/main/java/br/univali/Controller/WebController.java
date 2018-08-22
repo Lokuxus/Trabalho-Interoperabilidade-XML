@@ -12,6 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,7 +31,7 @@ public class WebController {
 	Gson json = new Gson();
 
 
-	
+	@CrossOrigin
 	@RequestMapping(value="/{nome}",method = RequestMethod.POST, produces = "application/json")
 	@ResponseStatus(value = HttpStatus.OK)
 	public void escreveXML(HttpEntity<String> entity, @PathVariable("nome") String arquivo) throws JAXBException, FileNotFoundException {
@@ -42,6 +43,7 @@ public class WebController {
 		marshaller.marshal(curso, System.out);
 	}
 	
+	@CrossOrigin
 	@RequestMapping(value = "/{nome}", method = RequestMethod.GET, produces = "application/json")
 	@ResponseStatus(value = HttpStatus.OK)
 	public String leXML(@PathVariable("nome") String arquivo) throws JAXBException, FileNotFoundException {

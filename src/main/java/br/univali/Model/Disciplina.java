@@ -14,6 +14,8 @@ public class Disciplina {
 	private List<String> requisitos = new ArrayList<String>();
 	private int creditos;
 	private String sala;
+	private String ementa;
+	private List<String> avaliacoes = new ArrayList<String>();
 	private Professor professor;
 
 	public Disciplina() {
@@ -88,5 +90,21 @@ public class Disciplina {
 	@XmlAttribute(name="codigo")
 	public void setCodigo_disciplina(Long codigo_disciplina) {
 		this.codigo = codigo_disciplina;
+	}
+
+	public List<String> getAvaliacoes() {
+		return avaliacoes;
+	}
+
+	public void setAvaliacoes(List<String> avaliacoes) {
+		this.avaliacoes = avaliacoes;
+	}
+
+	public String getEmenta() {
+		return ementa;
+	}
+
+	public void setEmenta(String ementa) {
+		this.ementa = ementa;
 	}
 }
