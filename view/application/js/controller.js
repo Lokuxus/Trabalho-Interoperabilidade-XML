@@ -5,13 +5,12 @@
         , ['$scope', '$http', function($scope, $http){
 
       var viewModel = this;
-      var baseUrl = 'http://localhost:8079/curso'
 
       
-      $http.get(baseUrl).then(function(response) {
+      $http.get('http://localhost:8079/curso').then(function(response) {
         viewModel.curso = response.data;
       }, function(err) {
-        console.log(err);
+        console.log("Deu Ruim", err);
       });            
     }]);
 
