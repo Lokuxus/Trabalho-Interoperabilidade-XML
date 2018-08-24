@@ -10,34 +10,48 @@
       </head>
       <body>
       
-        <div class="main-app" ng-controller="XmlController as viewModel">
+        <div class="main-app" ng-controller="XmlController as viewModel" >
             <h2 class="main-title">{{viewModel.curso.nome}}</h2>
-                
-            <table class="table table-bordered" ng-repeat="tabela in viewModel.curso.semestres">
-                <thead>
-                  <tr>
-                    <th scope="col">Código</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Descrição da Matéria</th>
-                    <th scope="col">Professor(a)</th>
-                    <th scope="col">Sala</th>
-                    <th scope="col">Quantidade de Créditos</th>
-                    <th scope="col">Periodo</th>
-                  </tr>
-                  
-                </thead>
-                <tbody>
-                  <tr ng-repeat="linha in tabela.disciplinas">
-                      <th>{{linha.codigo}}</th> 
-                      <th>{{linha.nome}}</th> 
-                      <th>{{linha.descricao}}</th> 
-                      <th>{{linha.professor.nome}}</th> 
-                      <th>{{linha.sala}}</th> 
-                      <th>{{linha.creditos}}</th> 
-                      <th>{{tabela.nome}}</th> 
-                  </tr>
-                </tbody>
-              </table>
+              <div class="row semestre" ng-repeat="semestre in viewModel.curso.semestres" ng-hide="viewModel.editando">
+                <h3>{{semestre.nome}}º Semestre</h3>
+                <div class="row disciplinas">
+                    <div class="disciplina" ng-repeat="disciplina in semestre.disciplinas"  ng-click="viewModel.escolherDisciplina(disciplina)">
+                        <span class="nome-disciplina">{{disciplina.nome}}</span>
+                   </div>
+                </div>
+                 
+              </div> 
+
+              <div ng-show="viewModel.editando">
+                  {{viewModel.disciplinaEscolhida}}
+                  <div class="row">
+                      <div class="col-md-3 form-group">
+                          <label>Nome da Disciplina</label>
+                          <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.nome" placeholder="Nome da disciplina">
+                      </div>
+                      <div class="col-md-3 form-group">
+                          <label>Descrição da disciplina</label>
+                          <textarea class="form-control" ng-model="viewModel.disciplinaEscolhida.descricao" rows="1" placeholder="Nome da disciplina"></textarea>
+                      </div>
+                      <div class="col-md-3 form-group">
+                          <label>Nome do Professor</label>
+                          <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.professor.nome" placeholder="Nome da disciplina">
+                      </div>
+                      <div class="col-md-3 form-group">
+                          <label>Sala</label>
+                          <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.sala" placeholder="Nome da disciplina">
+                      </div>
+                      <div class="col-md-3 form-group">
+                          <label>Ementa da disciplina</label>
+                          <textarea class="form-control" ng-model="viewModel.disciplinaEscolhida.ementa" rows="1" placeholder="Ementa da disciplina"></textarea>
+                      </div>
+                      <div class="col-md-3 form-group" ng-repeat="rrequisito as viewModel.disciplinaEscolhida.requisitos">
+                          <label>Requisito</label>
+                          <input type="text" class="form-control" ng-model="requisito" placeholder="Nome da disciplina">
+                     </div>
+                     
+                  </div>
+              </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <script src="application/js/controller.js"></script>

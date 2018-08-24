@@ -1,37 +1,239 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Curso nome="Ciência da Computação">
-    <Semestre nome="Semestre 1">
-        <disciplinas nome="Calculo 1" codigo="4654">
+<?xml version="1.0" standalone="yes"?>
+<Curso nome="Sistemas para internet">
+    <Semestre nome="1">
+        <disciplinas codigo="21901" nome="Design de interfaces">
             <creditos>4</creditos>
-            <descricao>Disciplina contendo conteudo de função e derivadas</descricao>
+            <descricao>Descricao da materia</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
             <professor>
                 <nome>Célia</nome>
                 <titulo>MSc</titulo>
             </professor>
-            <sala>Sala 109</sala>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
         </disciplinas>
-        <disciplinas nome="Algoritmos e Programação I" codigo="4656">
+        <disciplinas codigo="21904" nome="Inovação Tecnológica">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+		<disciplinas codigo="21902" nome="Introdução à sistemas para internet">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Luca</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+        <disciplinas codigo="21903" nome="Lógica e programação">
             <creditos>8</creditos>
             <descricao>Disciplina contendo conteudo de programação</descricao>
             <professor>
                 <nome>Gabriel</nome>
                 <titulo>MSc</titulo>
             </professor>
-            <sala>Lab 2</sala>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B6.Lab 2</sala>
         </disciplinas>
-        <name>1</name>
-    </Semestre>
-    <Semestre nome="Semestre 2">
-        <disciplinas nome="Calculo 2" codigo="4655">
-            <creditos>4</creditos>
-            <descricao>Disciplina contendo conteudo de integrais, derivada dupla e integral dupla</descricao>
+		<disciplinas codigo="6375" nome="Projeto Integrador">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
             <professor>
                 <nome>Célia</nome>
                 <titulo>MSc</titulo>
             </professor>
             <requisitos>4654</requisitos>
-            <sala>Sala 109</sala>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
         </disciplinas>
-        <name>2</name>
+		<disciplinas codigo="21856" nome="Matematica computacional">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Adhemar</nome>
+                <titulo>D</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
     </Semestre>
+    <Semestre nome="2">
+		<disciplinas codigo="6382" nome="Projeto Integrador">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+    </Semestre>
+	
+	<Semestre nome="3">
+        <disciplinas codigo="6384" nome="Banco de dados">
+            <creditos>4</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+        <disciplinas codigo="6385" nome="Engenharia de software">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+		<disciplinas codigo="6387" nome="Planejamenyo e gerência de infra-estrutura">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Luca</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+        <disciplinas codigo="6383" nome="Programação">
+            <creditos>8</creditos>
+            <descricao>Disciplina contendo conteudo de programação</descricao>
+            <professor>
+                <nome>Gabriel</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B6.Lab 2</sala>
+        </disciplinas>
+		<disciplinas codigo="6388" nome="Projeto Integrador">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+    </Semestre>
+	<Semestre nome="4">
+		<disciplinas codigo="6395" nome="Projeto Integrador">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+    </Semestre>
+	
+		<Semestre nome="5">
+        <disciplinas codigo="6400" nome="Empreendedorismo">
+            <creditos>4</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+        <disciplinas codigo="6399" nome="Legislação aplicada à informatica">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+		<disciplinas codigo="6402" nome="Projeto de graduação integrado">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Luca</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+        <disciplinas codigo="6398" nome="Sistemas de informação">
+            <creditos>8</creditos>
+            <descricao>Disciplina contendo conteudo de programação</descricao>
+            <professor>
+                <nome>Gabriel</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B6.Lab 2</sala>
+        </disciplinas>
+		<disciplinas codigo="6397" nome="Sistemas de recomendação web">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+		<disciplinas codigo="6401" nome="Topicos especiais">
+		     <creditos>2</creditos>
+            <descricao>Descricao</descricao>
+            <ementa>Histórico da Computação. Sistema de numeração. O hardware do computador. O software do computador. Funcionamento basico do computador</ementa>
+            <professor>
+                <nome>Célia</nome>
+                <titulo>MSc</titulo>
+            </professor>
+            <requisitos>4654</requisitos>
+            <requisitos>4656</requisitos>
+            <sala>Itajai.B5.110</sala>
+        </disciplinas>
+    </Semestre>
+	
 </Curso>

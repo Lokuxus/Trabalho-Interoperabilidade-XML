@@ -6,6 +6,15 @@
 
       var viewModel = this;
       viewModel.curso = {}
+
+      viewModel.escolherDisciplina = escolherDisciplina;
+      viewModel.disciplinaEscolhida = {};
+      viewModel.editando = false;
+
+      function escolherDisciplina(disciplina){
+        viewModel.editando = true;
+        viewModel.disciplinaEscolhida = disciplina;
+      }
       
       $http.get('http://localhost:8079/curso').then(function(response) {
         viewModel.curso = response.data;

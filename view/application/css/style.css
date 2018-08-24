@@ -7,3 +7,38 @@
 .main-app{
     padding: 0 40px;
 }
+
+.semestre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome-disciplina{
+    padding: 10px 0;
+}
+
+.disciplinas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.disciplina{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d44c4c;
+    border: 1px solid;
+    margin: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.row{
+    width: 100%;
+}
