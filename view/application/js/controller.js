@@ -8,12 +8,18 @@
       viewModel.curso = {}
 
       viewModel.escolherDisciplina = escolherDisciplina;
+      viewModel.voltarMenu = voltarMenu;
       viewModel.disciplinaEscolhida = {};
       viewModel.editando = false;
 
       function escolherDisciplina(disciplina){
         viewModel.editando = true;
         viewModel.disciplinaEscolhida = disciplina;
+      }
+
+      function voltarMenu(){
+        viewModel.editando = false;
+        viewModel.disciplinaEscolhida = {};
       }
       
       $http.get('http://localhost:8079/curso').then(function(response) {

@@ -23,34 +23,53 @@
               </div> 
 
               <div ng-show="viewModel.editando">
-                  {{viewModel.disciplinaEscolhida}}
                   <div class="row">
-                      <div class="col-md-3 form-group">
-                          <label>Nome da Disciplina</label>
-                          <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.nome" placeholder="Nome da disciplina">
+                      <div class="col-md-6">
+                            <div class="col-md-12 form-group">
+                                    <label>Nome da Disciplina</label>
+                                    <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.nome" placeholder="Nome da disciplina">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                    <label>Código da disciplina</label>
+                                    <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.codigo" placeholder="Nome da disciplina">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                    <label>Total de créditos</label>
+                                    <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.creditos" placeholder="Nome da disciplina">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                    <label>Sala</label>
+                                    <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.sala" placeholder="Nome da disciplina">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label>Ementa da disciplina</label>
+                                    <textarea class="form-control" ng-model="viewModel.disciplinaEscolhida.ementa" rows="2" placeholder="Ementa da disciplina"></textarea>
+                                </div>
                       </div>
-                      <div class="col-md-3 form-group">
-                          <label>Descrição da disciplina</label>
-                          <textarea class="form-control" ng-model="viewModel.disciplinaEscolhida.descricao" rows="1" placeholder="Nome da disciplina"></textarea>
-                      </div>
-                      <div class="col-md-3 form-group">
-                          <label>Nome do Professor</label>
-                          <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.professor.nome" placeholder="Nome da disciplina">
-                      </div>
-                      <div class="col-md-3 form-group">
-                          <label>Sala</label>
-                          <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.sala" placeholder="Nome da disciplina">
-                      </div>
-                      <div class="col-md-3 form-group">
-                          <label>Ementa da disciplina</label>
-                          <textarea class="form-control" ng-model="viewModel.disciplinaEscolhida.ementa" rows="1" placeholder="Ementa da disciplina"></textarea>
-                      </div>
-                      <div class="col-md-3 form-group" ng-repeat="rrequisito as viewModel.disciplinaEscolhida.requisitos">
-                          <label>Requisito</label>
-                          <input type="text" class="form-control" ng-model="requisito" placeholder="Nome da disciplina">
-                     </div>
-                     
+                      <div class="col-md-6">
+                            <div class="col-md-12 form-group">
+                                    <label>Descrição da disciplina</label>
+                                    <textarea class="form-control" ng-model="viewModel.disciplinaEscolhida.descricao" rows="2" placeholder="Nome da disciplina"></textarea>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label>Nome do Professor</label>
+                                    <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.professor.nome" placeholder="Nome da disciplina">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                  <label>Titulo do Professor</label>
+                                  <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.professor.titulo" placeholder="Nome da disciplina">
+                              </div>
+                              <div class="col-md-12 form-group">
+                                    <label>Requisitos</label>
+                                    <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.requisitos" placeholder="Nome da disciplina">
+                               </div>
+                               <div class="col-md-12 form-group">
+                                  <label>Avaliações</label>
+                                  <input type="text" class="form-control" ng-model="viewModel.disciplinaEscolhida.avaliacoes" placeholder="Avaliações">
+                             </div>
+                      </div>                     
                   </div>
+                  <button type="button" ng-click="viewModel.voltarMenu()" class="btn btn-primary">Voltar</button>
               </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
